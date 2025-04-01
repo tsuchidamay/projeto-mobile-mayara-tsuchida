@@ -21,11 +21,8 @@ export default function HomeScreen() {
       </ThemedView>
       <ThemedView style={styles.stepContainer}>
         <ThemedText type="subtitle">Pizza:</ThemedText>
-        <ThemedText> 
-          {' '}
-          <ThemedText type="defaultSemiBold">
-          
-          </ThemedText>{' '}
+        <ThemedText>
+
           Calabresa, Quatro queijos e Portuguesa.
         </ThemedText>
       </ThemedView>
@@ -37,8 +34,8 @@ export default function HomeScreen() {
       </ThemedView>
       <ThemedView style={styles.stepContainer}>
         <ThemedText type="subtitle">Lasanha:</ThemedText>
-          Frutos do mar, á Bolonhesa e Quatro queijos.{' '}
-   
+        <ThemedText>Frutos do mar, á Bolonhesa e Quatro queijos.</ThemedText>
+
       </ThemedView>
     </ParallaxScrollView>
   );
