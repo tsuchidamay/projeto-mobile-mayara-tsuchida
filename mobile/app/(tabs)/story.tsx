@@ -16,30 +16,17 @@ export default function HomeScreen() {
         />
       }>
       <ThemedView style={styles.titleContainer}>
-        <ThemedText type="title">Culinária Italiana:</ThemedText>
+        <ThemedText type="title">A História da Culinária Italiana:</ThemedText>
         <HelloWave />
       </ThemedView>
 
       <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Pizzas:</ThemedText>
+        <ThemedText type="subtitle">Como e onde começou:</ThemedText>
         <ThemedText>
-        Margherita, Pepperoni e Quatro Queijos.
+        A história da culinária italiana é rica e diversificada, refletindo a evolução cultural e social do país ao longo dos séculos. Influenciada por civilizações antigas, como os romanos e os etruscos, a cozinha italiana começou a se formar com a introdução de ingredientes como trigo, azeite de oliva e vinho. Durante a Idade Média, a culinária foi enriquecida por influências árabes e bizantinas, que trouxeram especiarias e novos métodos de preparo. O Renascimento marcou um período de grande inovação gastronômica, com a valorização da apresentação dos pratos e a utilização de ingredientes frescos. Com a unificação da Itália no século XIX, as tradições regionais se consolidaram, resultando em uma culinária variada que hoje é celebrada mundialmente, destacando-se pela simplicidade, frescor e sabor.
         </ThemedText>
       </ThemedView>
-
-      <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Macarrão:</ThemedText>
-        <ThemedText>
-        Spaghetti à Carbonara, Fettuccine Alfredo e Penne ao Pesto.
-        </ThemedText>
-      </ThemedView>
-
-      <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Lasanha:</ThemedText>
-        <ThemedText>
-        Lasanha à Bolonhesa, Lasanha Vegetariana e Lasanha de Frango.
-        </ThemedText>
-      </ThemedView>
+      
     </ParallaxScrollView>
   );
 }

@@ -19,77 +19,47 @@ export default function TabTwoScreen() {
           style={styles.headerImage}
         />
       }>
+
       <ThemedView style={styles.titleContainer}>
-        <ThemedText type="title">Explore</ThemedText>
+        <ThemedText type="title">Características da Culinária Italiana:</ThemedText>
       </ThemedView>
-      <ThemedText>This app includes example code to help you get started.</ThemedText>
-      <Collapsible title="File-based routing">
+      <ThemedText>Essas características ajudam a definir a rica e variada culinária italiana, que é apreciada em todo o mundo!
+      </ThemedText>
+
+      <Collapsible title="Simplicidade:">
         <ThemedText>
-          This app has two screens:{' '}
-          <ThemedText type="defaultSemiBold">app/(tabs)/index.tsx</ThemedText> and{' '}
-          <ThemedText type="defaultSemiBold">app/(tabs)/explore.tsx</ThemedText>
-        </ThemedText>
-        <ThemedText>
-          The layout file in <ThemedText type="defaultSemiBold">app/(tabs)/_layout.tsx</ThemedText>{' '}
-          sets up the tab navigator.
-        </ThemedText>
-        <ExternalLink href="https://docs.expo.dev/router/introduction">
-          <ThemedText type="link">Learn more</ThemedText>
-        </ExternalLink>
-      </Collapsible>
-      <Collapsible title="Android, iOS, and web support">
-        <ThemedText>
-          You can open this project on Android, iOS, and the web. To open the web version, press{' '}
-          <ThemedText type="defaultSemiBold">w</ThemedText> in the terminal running this project.
+        A culinária italiana valoriza a simplicidade, utilizando poucos ingredientes de alta qualidade para criar pratos saborosos.
         </ThemedText>
       </Collapsible>
-      <Collapsible title="Images">
+      
+      <Collapsible title="Frescor dos Ingredientes:">
         <ThemedText>
-          For static images, you can use the <ThemedText type="defaultSemiBold">@2x</ThemedText> and{' '}
-          <ThemedText type="defaultSemiBold">@3x</ThemedText> suffixes to provide files for
-          different screen densities
+        A ênfase em ingredientes frescos e sazonais é fundamental, com destaque para vegetais, ervas, queijos e carnes locais.
         </ThemedText>
-        <Image source={require('@/assets/images/react-logo.png')} style={{ alignSelf: 'center' }} />
-        <ExternalLink href="https://reactnative.dev/docs/images">
-          <ThemedText type="link">Learn more</ThemedText>
-        </ExternalLink>
       </Collapsible>
-      <Collapsible title="Custom fonts">
+
+      <Collapsible title="Variedade Regional:">
         <ThemedText>
-          Open <ThemedText type="defaultSemiBold">app/_layout.tsx</ThemedText> to see how to load{' '}
-          <ThemedText style={{ fontFamily: 'SpaceMono' }}>
-            custom fonts such as this one.
-          </ThemedText>
+        Cada região da Itália tem suas próprias especialidades e tradições culinárias, refletindo a diversidade cultural e geográfica do país.
         </ThemedText>
-        <ExternalLink href="https://docs.expo.dev/versions/latest/sdk/font">
-          <ThemedText type="link">Learn more</ThemedText>
-        </ExternalLink>
       </Collapsible>
-      <Collapsible title="Light and dark mode components">
+
+      <Collapsible title="Uso de Azeite de Oliva:">
         <ThemedText>
-          This template has light and dark mode support. The{' '}
-          <ThemedText type="defaultSemiBold">useColorScheme()</ThemedText> hook lets you inspect
-          what the user's current color scheme is, and so you can adjust UI colors accordingly.
+        O azeite de oliva é um ingrediente essencial, utilizado tanto para cozinhar quanto para temperar saladas e pratos.
         </ThemedText>
-        <ExternalLink href="https://docs.expo.dev/develop/user-interface/color-themes/">
-          <ThemedText type="link">Learn more</ThemedText>
-        </ExternalLink>
       </Collapsible>
-      <Collapsible title="Animations">
+
+      <Collapsible title="Massas e Pães:">
         <ThemedText>
-          This template includes an example of an animated component. The{' '}
-          <ThemedText type="defaultSemiBold">components/HelloWave.tsx</ThemedText> component uses
-          the powerful <ThemedText type="defaultSemiBold">react-native-reanimated</ThemedText>{' '}
-          library to create a waving hand animation.
+        A massa é um dos pilares da culinária italiana, com uma infinidade de formas e preparações, além de pães artesanais, como ciabatta e focaccia.
         </ThemedText>
-        {Platform.select({
-          ios: (
-            <ThemedText>
-              The <ThemedText type="defaultSemiBold">components/ParallaxScrollView.tsx</ThemedText>{' '}
-              component provides a parallax effect for the header image.
-            </ThemedText>
-          ),
-        })}
+      </Collapsible>
+
+      <Collapsible title="Molhos Ricos:">
+        <ThemedText>
+        Os molhos, como o marinara, pesto e ragù, são fundamentais, muitas vezes preparados com ingredientes frescos e cozidos lentamente para intensificar os sabores.
+        </ThemedText>
       </Collapsible>
     </ParallaxScrollView>
   );
