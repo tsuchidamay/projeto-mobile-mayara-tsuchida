@@ -7,6 +7,8 @@ import { IconSymbol } from '@/components/ui/IconSymbol';
 import TabBarBackground from '@/components/ui/TabBarBackground';
 import { Colors } from '@/constants/Colors';
 import { useColorScheme } from '@/hooks/useColorScheme';
+import Entypo from '@expo/vector-icons/Entypo';
+
 
 export default function TabLayout() {
   const colorScheme = useColorScheme();
@@ -29,15 +31,22 @@ export default function TabLayout() {
       <Tabs.Screen
         name="index"
         options={{
-          title: 'Home',
+          title: 'Cardápio',
           tabBarIcon: ({ color }) => <IconSymbol size={28} name="house.fill" color={color} />,
         }}
       />
       <Tabs.Screen
         name="explore"
         options={{
-          title: 'Explore',
-          tabBarIcon: ({ color }) => <IconSymbol size={28} name="paperplane.fill" color={color} />,
+          title: 'Características',
+          tabBarIcon: ({ color }) => <Entypo name="heart" size={24} color={color}/>,
+        }}
+      />
+      <Tabs.Screen
+        name="story"
+        options={{
+          title: 'História',
+          tabBarIcon: ({ color }) => <Entypo name="heart-outlined" size={24} color={color} />,
         }}
       />
     </Tabs>
