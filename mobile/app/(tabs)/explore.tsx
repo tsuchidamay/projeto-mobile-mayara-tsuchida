@@ -1,4 +1,5 @@
 import { StyleSheet, Image, Platform } from 'react-native';
+import React, { useEffect, useState } from 'react';//api
 
 import { Collapsible } from '@/components/Collapsible';
 import { ExternalLink } from '@/components/ExternalLink';
