@@ -3,12 +3,12 @@ import React from 'react';
 import { Platform } from 'react-native';
 
 import { HapticTab } from '@/components/HapticTab';
-import { IconSymbol } from '@/components/ui/IconSymbol';
 import TabBarBackground from '@/components/ui/TabBarBackground';
 import { Colors } from '@/constants/Colors';
 import { useColorScheme } from '@/hooks/useColorScheme';
-import Entypo from '@expo/vector-icons/Entypo';
-import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons';
+import Ionicons from '@expo/vector-icons/Ionicons';
+import MaterialIcons from '@expo/vector-icons/MaterialIcons';
+import SimpleLineIcons from '@expo/vector-icons/SimpleLineIcons';
 
 
 export default function TabLayout() {
@@ -33,21 +33,21 @@ export default function TabLayout() {
         name="index"
         options={{
           title: 'Cardápio',
-          tabBarIcon: ({ color }) => <MaterialCommunityIcons name="cards-playing-heart-outline" size={24} color={color} />,
+          tabBarIcon: ({ color }) => <Ionicons name="pizza-outline" size={24} color={color} />,
         }}
       />
       <Tabs.Screen
         name="explore"
         options={{
           title: 'Características',
-          tabBarIcon: ({ color }) => <Entypo name="heart" size={24} color={color}/>,
+          tabBarIcon: ({ color }) => <SimpleLineIcons name="puzzle" size={24} color={color}/>,
         }}
       />
       <Tabs.Screen
         name="story"
         options={{
           title: 'História',
-          tabBarIcon: ({ color }) => <Entypo name="heart-outlined" size={24} color={color} />,
+          tabBarIcon: ({ color }) => <MaterialIcons name="history-edu" size={24} color={color} />,
         }}
       />
     </Tabs>
